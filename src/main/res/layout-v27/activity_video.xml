@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#BDBDBD"
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        tools:ignore="MissingConstraints">
+        <VideoView
+            android:id="@+id/video_show"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/showVideo_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello,world" />
+        <TextView
+            android:id="@+id/showVideo_info"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/showVideo_name"
+            android:text="@android:string/autofill"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

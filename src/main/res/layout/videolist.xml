@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/video_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:textDirection="anyRtl"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Love, Death  Robots Season 1 (2019)"
+        android:ellipsize="end"
+        android:maxLength="40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/video_url"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/robot" />
+
+        <TextView
+            android:layout_toRightOf="@id/video_url"
+            android:id="@+id/video_info"
+            android:layout_width="209dp"
+            android:layout_height="155dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:ellipsize="marquee"
+            android:maxLines="5"
+            android:lineSpacingExtra="5dp"
+            android:lineSpacingMultiplier="1"
+            android:text="这部名为《爱，死亡和机器人》的动画短片合集由18部分组成每部分时长5-15分钟。这些短片涵盖多种类型，包括科幻、奇幻、恐怖和喜剧；这些短片也将包含多种形式，包括传统2D和3DCGI短片"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
